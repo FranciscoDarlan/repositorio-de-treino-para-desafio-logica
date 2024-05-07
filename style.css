@@ -5,17 +5,26 @@ body {
     justify-content: center;  /*  Alinha o item horizontal  */
     align-items: center;     /*  Alinha o item vertical  */
     background: url(./img/bombeiropng.png);
-    
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-
+    background-position:  50%;
 }
-
+body::after{
+    content: '';
+    background-color: rgba(187, 170, 170, 0.801);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .8;
+    z-index: -1;
+}
 div {
-    width: 30vw;
-    height: 30vh;
+    width: 40vw;
+    height: 50vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 1px solid black;
@@ -25,7 +34,7 @@ div {
 
 .input-text{
     display: flex;
-    width: 100vw;
+    width: 70%;
     margin: 0 30px;
     height: 5vh;
     font-size: 50px;
@@ -33,16 +42,27 @@ div {
 }
 
 .input-button{
-    width: 50vw;
+    width: 40%;
     height: 5vh;
     font-size: 50px;
     background-color: blue;
     color: aliceblue;
-    margin: 0 20px 0 0;
+    margin: 50px 20px 0 0;
     border-radius: 10px;
 }
 .input-button:hover{
 opacity: 0.5;}
 .input-button:active{
     opacity: 0.7;
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    width: 90%;
+    margin: 50px 0;
+    height: 5vh;
+    font-size: 50px;
+    border: none;
 }
