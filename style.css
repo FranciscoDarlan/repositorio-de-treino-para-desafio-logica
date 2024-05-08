@@ -32,6 +32,14 @@ div {
     border-radius: 20px;
 }
 
+.class-pergunta {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    width: 90%;
+    font-size: 50px;
+}
+
 .input-text{
     display: flex;
     width: 70%;
@@ -43,7 +51,7 @@ div {
 
 .input-button{
     width: 40%;
-    height: 5vh;
+    height: 8vh;
     font-size: 50px;
     background-color: blue;
     color: aliceblue;

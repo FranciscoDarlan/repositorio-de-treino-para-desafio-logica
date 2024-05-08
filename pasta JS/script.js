@@ -1,3 +1,5 @@
+// 1- Crie uma função que valide se um número é positivo, negativo ou zero.
+
 let inputText = document.querySelector('.input-text');
 let inputButton = document.querySelector('.input-button');
 let span = document.querySelector('.class-span');
